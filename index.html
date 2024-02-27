@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/styles.css" type="text/css">
+    <!-- Incluye el CSS de Swiper -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+    <title>Surmodel</title>
+</head>
+
+<body>
+    <section class="first-view">
+        <h3>Nueva App</h3>
+        <h1>Salud Ya</h1>
+    </section>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <h2>Solicitud de atención</h2>
+                    <p>Salud Ya consiste en una plataforma en la cual un paciente registrado solicitará los servicios de
+                        un profesional de la salud, todo esto para tu seguridad y comodidad</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <h2>Ubicación en tiempo real</h2>
+                    <p>Tu solicitas la atención y un profesional de la salud aceptará tu solicitud, mostrándote a cuanto
+                        tiempo/distancia se encuentra de tu ubicación</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <h2>Confidencialidad de datos</h2>
+                    <p>Tus datos solo serán manejados por la App y los datos de relevancia por el personal de salud que
+                        tome tu solicitud de atención</p>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <div class="slide-content">
+                    <h2>Recetas y certificados</h2>
+                    <p>Nuestros profesionales de la salud están certificados para brindarte recetas y certificados acorde a tus necesidades y síntomas</p>
+                </div>
+            </div>
+            <!-- Repite lo mismo para las otras imágenes -->
+        </div>
+        <!-- Si deseas agregar botones de navegación -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+    <section class="vistaUno box">
+        <div class="left-view">
+            <h3>¡ Te invitamos a ser parte de Salud Ya instalando nuestra App y comentandonos tu experiencia !</h3>
+            <div class="botones">
+                <a href="#"><img src="/assets/google.webp" alt=""></a>
+                <a href="#"><img src="/assets/play.jpg" alt="" class="app"></a>
+            </div>
+        </div>
+        <div class="right-view">
+            <img src="/assets/a.png" alt="">
+        </div>
+    </section>
+    <script src="/styles/script.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        // Inicializa Swiper
+        var swiper = new Swiper('.swiper-container', {
+            slidesPerView: 1,
+            spaceBetween: 30,
+            loop: true,
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+        });
+    </script>
+</body>
+
+</html>
